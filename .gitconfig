@@ -1,0 +1,19 @@
+[user]
+	name = Zhe Zheng
+	email = zhengzhe@ftang.cn
+[core]
+	editor = vim
+	filemode = false
+[merge]
+	tool = vimdiff
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[push]
+	default = matching
