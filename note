@@ -1,0 +1,32 @@
+# win vim
+set guifont=Consolas:h13
+set backspace=indent,eol,start
+colo desert
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+language messages zh_CN.utf-8
+set guioptions-=m
+set guioptions-=T
+
+# ubuntu crontab
+NODE=/usr/local/bin/node
+PUSHPATH=/mnt/DISK2/SRC/jack/push-server/script
+LOG=cron.log
+*>---* * *>--root>---cd $PUSHPATH && $NODE excutePushScheduleAll.js >> $LOG
+
+# .bashrc
+export GREP_OPTIONS="--exclude-dir=\.svn"
+export GREP_OPTIONS+=" --exclude-dir=\.git"
+export GREP_OPTIONS+=" --exclude-dir=node_modules"
+export GREP_OPTIONS+=" --exclude-dir=echarts"
+export GREP_OPTIONS+=" --exclude-dir=jquery"
+export GREP_OPTIONS+=" --exclude-dir=bootstrap"
+
+export GREP_OPTIONS+=" --exclude=tags"
+
+# centos tmux
+setw -g window-status-current-format "#I:bash"
+setw -g window-status-format "#I:bash"
+
+# centos .bashrc
+PS1="[\u:\w]\$ "
