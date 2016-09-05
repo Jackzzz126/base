@@ -19,6 +19,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-scripts/JavaScript-syntax'
 " ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
+" solarized
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 
 "visual
@@ -75,3 +77,8 @@ let g:syntastic_check_on_wq = 0
 
 " YouCompleteMe
 set completeopt-=preview
+
+" solarized
+set background=dark
+colorscheme solarized
+
