@@ -1,6 +1,7 @@
 set nocp
 "Vundle
 filetype off                  " required
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -9,9 +10,17 @@ Plugin 'VundleVim/Vundle.vim'
 " syntax check
 Plugin 'scrooloose/syntastic'
 " auto complete
-Plugin 'Valloric/YouCompleteMe'
+if (has("macunix"))
+	"Plugin 'Valloric/YouCompleteMe'
+else
+	Plugin 'Valloric/YouCompleteMe'
+endif
 " js auto complete
-Plugin 'marijnh/tern_for_vim'
+if (has("macunix"))
+	"Plugin 'marijnh/tern_for_vim'
+else
+	Plugin 'marijnh/tern_for_vim'
+endif
 " mdk
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -19,7 +28,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-scripts/JavaScript-syntax'
 " ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
-" solarized
+" Solarized
 Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 
@@ -77,8 +86,4 @@ let g:syntastic_check_on_wq = 0
 
 " YouCompleteMe
 set completeopt-=preview
-
-" solarized
-set background=dark
-colorscheme solarized
 
