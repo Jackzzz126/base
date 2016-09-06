@@ -1,4 +1,12 @@
 set nocp
+
+let sys = "linux"
+if has("macunix")
+	sys = "mac"
+elseif has("win16") || has("win32") || has("win64") || has("win95")
+	sys = "windows"
+endif
+
 "Vundle
 filetype off                  " required
 
@@ -9,16 +17,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " syntax check
 Plugin 'scrooloose/syntastic'
-" auto complete
-if (has("macunix"))
-	"Plugin 'Valloric/YouCompleteMe'
-else
+if sys == "linux"
+	" auto complete
 	Plugin 'Valloric/YouCompleteMe'
-endif
-" js auto complete
-if (has("macunix"))
-	"Plugin 'marijnh/tern_for_vim'
-else
+	" js auto complete
 	Plugin 'marijnh/tern_for_vim'
 endif
 " mdk
@@ -28,8 +30,6 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-scripts/JavaScript-syntax'
 " ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
-" Solarized
-Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 
 "visual
