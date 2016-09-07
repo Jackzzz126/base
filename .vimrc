@@ -30,6 +30,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-scripts/JavaScript-syntax'
 " ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
+" log file syntax highlighting
+Plugin 'dzeban/vim-log-syntax'
+
 call vundle#end()            " required
 
 "visual
