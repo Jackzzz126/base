@@ -32,7 +32,8 @@ Plugin 'vim-scripts/JavaScript-syntax'
 Plugin 'leafgarland/typescript-vim'
 " log file syntax highlighting
 Plugin 'dzeban/vim-log-syntax'
-
+" matchit
+Plugin 'vim-scripts/matchit.zip'
 call vundle#end()            " required
 
 "visual
