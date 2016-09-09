@@ -32,8 +32,6 @@ Plugin 'vim-scripts/JavaScript-syntax'
 Plugin 'leafgarland/typescript-vim'
 " log file syntax highlighting
 Plugin 'dzeban/vim-log-syntax'
-" matchit
-Plugin 'vim-scripts/matchit.zip'
 call vundle#end()            " required
 
 "visual
@@ -90,4 +88,7 @@ let g:syntastic_check_on_wq = 0
 
 " YouCompleteMe
 set completeopt-=preview
+
+" matchit
+runtime macros/matchit.vim
 
