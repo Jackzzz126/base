@@ -92,3 +92,7 @@ set completeopt-=preview
 " matchit
 runtime macros/matchit.vim
 
+" gf command
+set suffixesadd+=.js
+set suffixesadd+=.json
+
