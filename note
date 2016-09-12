@@ -15,6 +15,7 @@ LOG=cron.log
 *>---* * *>--root>---cd $PUSHPATH && $NODE excutePushScheduleAll.js >> $LOG
 
 # .bashrc
+# grep
 export GREP_OPTIONS="--exclude-dir=\.svn"
 export GREP_OPTIONS+=" --exclude-dir=\.git"
 export GREP_OPTIONS+=" --exclude-dir=node_modules"
@@ -23,6 +24,9 @@ export GREP_OPTIONS+=" --exclude-dir=jquery"
 export GREP_OPTIONS+=" --exclude-dir=bootstrap"
 
 export GREP_OPTIONS+=" --exclude=tags"
+
+#bash vi mmode
+set -o vi
 
 # centos tmux
 setw -g window-status-current-format "#I:bash"
