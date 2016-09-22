@@ -16,7 +16,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-if mode == dev
+if mode == "dev"
 	" syntax check
 	Plugin 'scrooloose/syntastic'
 	if sys == "linux"
@@ -81,7 +81,7 @@ runtime macros/matchit.vim
 set suffixesadd+=.js
 set suffixesadd+=.json
 
-if mode == dev
+if mode == "dev"
 	"tags
 	set tags+=./tags,../tags,../../tags,../../../tags
 	set tags+=~/.vim/systags
