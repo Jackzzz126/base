@@ -25,6 +25,8 @@ if mode == "dev"
 		" js auto complete
 		Plugin 'marijnh/tern_for_vim'
 	endif
+	" vim go
+	Plugin 'fatih/vim-go'
 endif
 " mdk
 Plugin 'godlygeek/tabular'
@@ -100,4 +102,20 @@ if mode == "dev"
 	set completeopt-=preview
 endif
 
+"abbreviations
+"iabbrev /* /**/<left><left><backspace>
+
+" maps
+let mapleader = ","
+nnoremap <leader>e :split $MYVIMRC<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>:echom ".vimrc reloaded!"<cr>
+nnoremap K 10k
+nnoremap J 10j
+
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
+inoremap { {}<LEFT>
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
+inoremap ` ``<LEFT>
 
