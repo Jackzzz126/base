@@ -109,6 +109,8 @@ endif
 let mapleader = ","
 nnoremap <leader>e :split $MYVIMRC<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>:echom ".vimrc reloaded!"<cr>
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>,  <Plug>(go-run)
 nnoremap K 10k
 nnoremap J 10j
 
@@ -118,4 +120,16 @@ inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 inoremap ` ``<LEFT>
+
+vnoremap <leader>// I//<esc>
+vnoremap <leader># I#<esc>
+
+" compile
+set autowrite
+
+" quick fix
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+
+
 
