@@ -107,13 +107,15 @@ endif
 
 " maps
 let mapleader = ","
+" normal
 nnoremap <leader>e :split $MYVIMRC<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>:echom ".vimrc reloaded!"<cr>
-autocmd FileType go nmap <leader>b  <Plug>(go-build)
-autocmd FileType go nmap <leader>,  <Plug>(go-run)
+autocmd FileType go nnoremap <leader>b  <Plug>(go-build)
+autocmd FileType go nnoremap <leader>,  <Plug>(go-run)
 nnoremap K 10k
 nnoremap J 10j
 
+" insert
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
@@ -121,6 +123,12 @@ inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 inoremap ` ``<LEFT>
 
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+
+" virsual
 vnoremap <leader>// I//<esc>
 vnoremap <leader># I#<esc>
 
@@ -128,8 +136,12 @@ vnoremap <leader># I#<esc>
 set autowrite
 
 " quick fix
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
+nnoremap fn :cnext<CR>
+nnoremap fn :cprevious<CR>
+
+" location list
+nnoremap ln :lnext<CR>
+nnoremap lp :lprevious<CR>
 
 
 
