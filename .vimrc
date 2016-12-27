@@ -110,8 +110,8 @@ let mapleader = ","
 " normal
 nnoremap <leader>e :split $MYVIMRC<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>:echom ".vimrc reloaded!"<cr>
-autocmd FileType go nnoremap <leader>b  <Plug>(go-build)
-autocmd FileType go nnoremap <leader>,  <Plug>(go-run)
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>,  <Plug>(go-run)
 nnoremap K 10k
 nnoremap J 10j
 
@@ -137,7 +137,7 @@ set autowrite
 
 " quick fix
 nnoremap fn :cnext<CR>
-nnoremap fn :cprevious<CR>
+nnoremap fp :cprevious<CR>
 
 " location list
 nnoremap ln :lnext<CR>
