@@ -28,7 +28,7 @@ if mode == "dev"
 	" vim go
 	Plugin 'fatih/vim-go'
 endif
-" mdk
+" mkd
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 " js syntax highlighting
