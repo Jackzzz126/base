@@ -95,6 +95,8 @@ if mode == "dev"
 	set statusline+=%{SyntasticStatuslineFlag()}
 	set statusline+=%*
 
+	let g:syntastic_always_populate_loc_list = 1
+	let g:syntastic_auto_loc_list = 1
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 
@@ -136,12 +138,9 @@ vnoremap <leader># I#<esc>
 set autowrite
 
 " quick fix
-nnoremap fn :cnext<CR>
-nnoremap fp :cprevious<CR>
-
 " location list
-nnoremap ln :lnext<CR>
-nnoremap lp :lprevious<CR>
+nnoremap <expr><C-n> (&buftype=='quickfix'?':cn':':lnext')."\n"
+nnoremap <expr><C-p> (&buftype=='quickfix'?':cp':':lprev')."\n"
 
 
 
