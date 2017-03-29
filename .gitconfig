@@ -1,11 +1,6 @@
-[user]
-	name = Jack Zheng
-	email = Jackzzz@126.cn
 [core]
 	editor = vim
 	filemode = false
-[merge]
-	tool = vimdiff
 [color]
 	diff = auto
 	status = auto
@@ -15,5 +10,3 @@
 	ci = commit
 	co = checkout
 	br = branch
-[push]
-	default = matching
