@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Consolas, 'Microsoft YaHei', 'Courier New', monospace",
+    "editor.renderWhitespace": "boundary",
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 0,
+}
