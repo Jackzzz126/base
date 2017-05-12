@@ -91,12 +91,13 @@ if mode == "dev"
 
 	" syntastic
 	let g:syntastic_javascript_checkers = ['jshint']
+	let g:syntastic_python_checkers = ['pylint']
 	set statusline+=%#warningmsg#
 	set statusline+=%{SyntasticStatuslineFlag()}
 	set statusline+=%*
 
-	let g:syntastic_always_populate_loc_list = 1
-	let g:syntastic_auto_loc_list = 1
+"	let g:syntastic_always_populate_loc_list = 1
+"	let g:syntastic_auto_loc_list = 1
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 
@@ -142,5 +143,27 @@ set autowrite
 nnoremap <expr><C-n> (&buftype=='quickfix'?':cn':':lnext')."\n"
 nnoremap <expr><C-p> (&buftype=='quickfix'?':cp':':lprev')."\n"
 
+"<leader>, to run current file
+map <leader>, :call CompileRun()<CR>
+func! CompileRun()
+	exec "w"
 
+	if &filetype == 'c'
+		exec "!g++ % -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'cpp'
+		exec "!g++ % -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'java'
+		exec "!javac %"
+		exec "!java %<"
+	elseif &filetype == 'sh'
+		exec "!bash %"
+	elseif &filetype == 'py'
+		exec "!python %"
+		exec "!python %<"
+	 elseif &filetype == 'javascript'
+		exec "!node %"
+		endif
+endfunc
 
