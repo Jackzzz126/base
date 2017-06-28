@@ -162,8 +162,12 @@ func! CompileRun()
 	elseif &filetype == 'py'
 		exec "!python %"
 		exec "!python %<"
-	 elseif &filetype == 'javascript'
+	elseif &filetype == 'javascript'
 		exec "!node %"
-		endif
+	endif
 endfunc
+
+" python
+let g:python_recommended_style = 0
+
 
