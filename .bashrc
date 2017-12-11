@@ -23,8 +23,14 @@ export GREP_OPTIONS+=" --exclude-dir=bootstrap"
 export GREP_OPTIONS+=" --exclude-dir=logs"
 export GREP_OPTIONS+=" --exclude-dir=useless"
 export GREP_OPTIONS+=" --exclude-dir=js"
+export GREP_OPTIONS+=" --exclude-dir=tlogs"
+export GREP_OPTIONS+=" --exclude-dir=data"
+export GREP_OPTIONS+=" --exclude-dir=data_temp"
 
+export GREP_OPTIONS+=" --binary-files=without-match"
 export GREP_OPTIONS+=" --exclude=tags"
+export GREP_OPTIONS+=" --exclude=*.csv"
+# export GREP_OPTIONS+=" --exclude=*.json"
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
