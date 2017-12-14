@@ -1,0 +1,23 @@
+[Solarized Dark (2)]
+text=708284
+cyan(bold)=819090
+text(bold)=708284
+magenta=d33682
+green=408000
+green(bold)=0db51a
+background=001e27
+cyan=289771
+red(bold)=d11c24
+yellow=b58800
+magenta(bold)=5956ba
+yellow(bold)=536870
+red=dc322f
+white=fcf4dc
+blue(bold)=708284
+white(bold)=eae3cb
+black=001e27
+blue=2072ae
+black(bold)=002831
+[Names]
+name0=Solarized Dark (2)
+count=1
