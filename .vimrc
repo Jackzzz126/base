@@ -39,12 +39,14 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'dzeban/vim-log-syntax'
 call vundle#end()            " required
 
+"comm
+set backspace=indent,eol,start
 "visual
 set ruler
 set number
 set ts=4
 set sw=4
-"set expandtab
+set expandtab
 set sts=4
 set autoindent
 set smartindent
