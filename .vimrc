@@ -19,6 +19,8 @@ Plugin 'VundleVim/Vundle.vim'
 if mode == "dev"
 	" syntax check
 	Plugin 'scrooloose/syntastic'
+	" indent line
+	Plugin 'Yggdroot/indentLine'
 	if sys == "linux"
 		" auto complete
 		Plugin 'Valloric/YouCompleteMe'
@@ -105,6 +107,10 @@ if mode == "dev"
 
 	" YouCompleteMe
 	set completeopt-=preview
+
+	" Yggdroot/indentLine
+	let g:indentLine_color_term = 239
+	let g:indentLine_char = '┊'
 endif
 
 "abbreviations
