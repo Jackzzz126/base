@@ -1,4 +1,4 @@
-[Solarized Dark (2)]
+[Solarized Dark]
 text=708284
 cyan(bold)=819090
 text(bold)=708284
@@ -15,9 +15,9 @@ red=dc322f
 white=fcf4dc
 blue(bold)=708284
 white(bold)=eae3cb
-black=001e27
+black=003f51
 blue=2072ae
-black(bold)=002831
+black(bold)=004b5b
 [Names]
-name0=Solarized Dark (2)
+name0=Solarized Dark
 count=1
