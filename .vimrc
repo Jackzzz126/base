@@ -48,7 +48,7 @@ set ruler
 set number
 set ts=4
 set sw=4
-set expandtab
+"set expandtab
 set sts=4
 set autoindent
 set smartindent
@@ -111,7 +111,12 @@ if mode == "dev"
 	" Yggdroot/indentLine
 	let g:indentLine_color_term = 239
 	let g:indentLine_char = '┊'
+	let g:indentLine_showFirstIndentLevel = 1
+	let g:indentLine_first_char = '┊'
 endif
+
+" vim-markdown
+let g:vim_markdown_conceal = 0
 
 "abbreviations
 "iabbrev /* /**/<left><left><backspace>
