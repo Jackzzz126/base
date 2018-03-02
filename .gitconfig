@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	filemode = false
+	quotepath = false
 [color]
 	diff = auto
 	status = auto
@@ -13,5 +14,6 @@
 	ci = commit
 	co = checkout
 	br = branch
+	sm = submodule
 [push]
 	default = simple
