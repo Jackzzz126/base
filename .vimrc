@@ -109,6 +109,7 @@ if mode == "dev"
 	set completeopt-=preview
 
 	" Yggdroot/indentLine
+	let g:indentLine_concealcursor = ""
 	let g:indentLine_color_term = 239
 	let g:indentLine_char = '┊'
 	let g:indentLine_showFirstIndentLevel = 1
