@@ -115,9 +115,6 @@ if mode == "dev"
 	let g:indentLine_first_char = '┊'
 endif
 
-" vim-markdown
-let g:vim_markdown_conceal = 0
-
 "abbreviations
 "iabbrev /* /**/<left><left><backspace>
 
