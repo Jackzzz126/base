@@ -1,5 +1,6 @@
 set nocp
 
+"-------------------------- define ------------------------------------
 let sys = "linux"
 if has("macunix")
 	sys = "mac"
@@ -7,8 +8,9 @@ elseif has("win16") || has("win32") || has("win64") || has("win95")
 	sys = "windows"
 endif
 let mode = "dev"
+"---------------------------------------------------------------------
 
-"Vundle
+"-------------------------- vundle ------------------------------------
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -19,16 +21,17 @@ Plugin 'VundleVim/Vundle.vim'
 if mode == "dev"
 	" syntax check
 	Plugin 'scrooloose/syntastic'
+	" vim go
+	Plugin 'fatih/vim-go'
+	" js auto complete
+	Plugin 'marijnh/tern_for_vim'
 	" indent line
 	Plugin 'Yggdroot/indentLine'
+
 	if sys == "linux"
 		" auto complete
 		Plugin 'Valloric/YouCompleteMe'
-		" js auto complete
-		Plugin 'marijnh/tern_for_vim'
 	endif
-	" vim go
-	Plugin 'fatih/vim-go'
 endif
 " mkd
 Plugin 'godlygeek/tabular'
@@ -40,7 +43,40 @@ Plugin 'leafgarland/typescript-vim'
 " log file syntax highlighting
 Plugin 'dzeban/vim-log-syntax'
 call vundle#end()            " required
+"---------------------------------------------------------------------
+"-------------------------- vundle setting ---------------------------
+if mode == "dev"
+	"tags
+	set tags+=./tags,../tags,../../tags,../../../tags
+	set tags+=~/.vim/systags
+	set autochdir
 
+	" syntastic
+	let g:syntastic_javascript_checkers = ['jshint']
+	let g:syntastic_python_checkers = ['pylint']
+	set statusline+=%#warningmsg#
+	set statusline+=%{SyntasticStatuslineFlag()}
+	set statusline+=%*
+	let g:syntastic_check_on_open = 1
+	let g:syntastic_check_on_wq = 0
+
+	" Yggdroot/indentLine
+	let g:indentLine_concealcursor = ""
+	let g:indentLine_color_term = 239
+	let g:indentLine_char = '┊'
+	let g:indentLine_showFirstIndentLevel = 1
+	let g:indentLine_first_char = '┊'
+
+	if sys == "linux"
+		" YouCompleteMe
+		set completeopt-=preview
+	endif
+endif
+" python
+let g:python_recommended_style = 0
+"---------------------------------------------------------------------
+
+"-------------------------- comm ------------------------------------
 "comm
 set backspace=indent,eol,start
 "visual
@@ -87,34 +123,6 @@ runtime macros/matchit.vim
 set suffixesadd+=.js
 set suffixesadd+=.json
 
-if mode == "dev"
-	"tags
-	set tags+=./tags,../tags,../../tags,../../../tags
-	set tags+=~/.vim/systags
-	set autochdir
-
-	" syntastic
-	let g:syntastic_javascript_checkers = ['jshint']
-	let g:syntastic_python_checkers = ['pylint']
-	set statusline+=%#warningmsg#
-	set statusline+=%{SyntasticStatuslineFlag()}
-	set statusline+=%*
-
-"	let g:syntastic_always_populate_loc_list = 1
-"	let g:syntastic_auto_loc_list = 1
-	let g:syntastic_check_on_open = 1
-	let g:syntastic_check_on_wq = 0
-
-	" YouCompleteMe
-	set completeopt-=preview
-
-	" Yggdroot/indentLine
-	let g:indentLine_concealcursor = ""
-	let g:indentLine_color_term = 239
-	let g:indentLine_char = '┊'
-	let g:indentLine_showFirstIndentLevel = 1
-	let g:indentLine_first_char = '┊'
-endif
 
 "abbreviations
 "iabbrev /* /**/<left><left><backspace>
@@ -178,7 +186,6 @@ func! CompileRun()
 	endif
 endfunc
 
-" python
-let g:python_recommended_style = 0
+"---------------------------------------------------------------------
 
 
