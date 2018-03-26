@@ -19,61 +19,56 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 if mode == "dev"
-	" syntax check
-	Plugin 'scrooloose/syntastic'
-	" vim go
-	Plugin 'fatih/vim-go'
-	" js auto complete
-	Plugin 'marijnh/tern_for_vim'
-	" indent line
-	Plugin 'Yggdroot/indentLine'
-
 	if sys == "linux"
 		" auto complete
 		Plugin 'Valloric/YouCompleteMe'
 	endif
 endif
+" log file syntax highlighting
+Plugin 'dzeban/vim-log-syntax'
+" js syntax highlighting
+Plugin 'pangloss/vim-javascript'
+" js auto complete
+Plugin 'marijnh/tern_for_vim'
 " mkd
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-" js syntax highlighting
-Plugin 'vim-scripts/JavaScript-syntax'
+" vim go
+Plugin 'fatih/vim-go'
 " ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
-" log file syntax highlighting
-Plugin 'dzeban/vim-log-syntax'
+" syntax check
+Plugin 'scrooloose/syntastic'
+" indent line
+Plugin 'Yggdroot/indentLine'
 call vundle#end()            " required
 "---------------------------------------------------------------------
 "-------------------------- vundle setting ---------------------------
 if mode == "dev"
-	"tags
-	set tags+=./tags,../tags,../../tags,../../../tags
-	set tags+=~/.vim/systags
-	set autochdir
-
-	" syntastic
-	let g:syntastic_javascript_checkers = ['jshint']
-	let g:syntastic_python_checkers = ['pylint']
-	set statusline+=%#warningmsg#
-	set statusline+=%{SyntasticStatuslineFlag()}
-	set statusline+=%*
-	let g:syntastic_check_on_open = 1
-	let g:syntastic_check_on_wq = 0
-
-	" Yggdroot/indentLine
-	let g:indentLine_concealcursor = ""
-	let g:indentLine_color_term = 239
-	let g:indentLine_char = '┊'
-	let g:indentLine_showFirstIndentLevel = 1
-	let g:indentLine_first_char = '┊'
-
 	if sys == "linux"
 		" YouCompleteMe
 		set completeopt-=preview
 	endif
 endif
+
 " python
 let g:python_recommended_style = 0
+
+" syntastic
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_python_checkers = ['pylint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Yggdroot/indentLine
+let g:indentLine_concealcursor = ""
+let g:indentLine_color_term = 239
+let g:indentLine_char = '┊'
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_first_char = '┊'
 "---------------------------------------------------------------------
 
 "-------------------------- comm ------------------------------------
@@ -156,6 +151,11 @@ vnoremap <leader># I#<esc>
 
 " compile
 set autowrite
+
+"tags
+set tags+=./tags,../tags,../../tags,../../../tags
+set tags+=~/.vim/systags
+set autochdir
 
 " quick fix
 " location list
