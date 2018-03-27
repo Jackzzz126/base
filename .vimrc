@@ -41,8 +41,11 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/syntastic'
 " indent line
 Plugin 'Yggdroot/indentLine'
+" LeaderF
+Plugin 'Yggdroot/LeaderF'
 call vundle#end()            " required
 "---------------------------------------------------------------------
+
 "-------------------------- vundle setting ---------------------------
 if mode == "dev"
 	if sys == "linux"
@@ -69,6 +72,14 @@ let g:indentLine_color_term = 239
 let g:indentLine_char = '┊'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_first_char = '┊'
+
+" LeaderF
+let g:Lf_DefaultMode = 'FullPath'
+let g:Lf_WildIgnore = {
+            \ 'dir': ['.svn','.git','.hg'],
+            \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+            \}
+let g:Lf_WorkingDirectoryMode = 'Ac'
 "---------------------------------------------------------------------
 
 "-------------------------- comm ------------------------------------
@@ -131,6 +142,8 @@ autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>,  <Plug>(go-run)
 nnoremap K 10k
 nnoremap J 10j
+" LeaderF
+nnoremap <leader>t :LeaderfTag<cr>
 
 " insert
 inoremap ( ()<LEFT>
