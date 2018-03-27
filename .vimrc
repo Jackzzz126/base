@@ -186,6 +186,11 @@ func! CompileRun()
 	endif
 endfunc
 
+if exists('$TMUX')
+	autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
+	autocm VimLeave * call system("tmux setw automatic-rename")
+endif
+
 "---------------------------------------------------------------------
 
 
