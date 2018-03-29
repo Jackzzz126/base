@@ -43,6 +43,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Yggdroot/indentLine'
 " LeaderF
 Plugin 'Yggdroot/LeaderF'
+" Tagbar
+Plugin 'majutsushi/tagbar'
 call vundle#end()            " required
 "---------------------------------------------------------------------
 
@@ -80,6 +82,14 @@ let g:Lf_WildIgnore = {
             \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
             \}
 let g:Lf_WorkingDirectoryMode = 'Ac'
+
+" Tagbar"
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_left = 1
+let g:tagbar_zoomwidth = 0
+let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
+
 "---------------------------------------------------------------------
 
 "-------------------------- comm ------------------------------------
@@ -165,9 +175,9 @@ vnoremap <leader># I#<esc>
 " compile
 set autowrite
 
-"tags
-set tags+=./tags,../tags,../../tags,../../../tags
-set tags+=~/.vim/systags
+"tags;
+set tags=tags;
+""set tags+=~/.vim/systags
 set autochdir
 
 " quick fix
