@@ -68,6 +68,8 @@ set statusline+=%*
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+nmap <F7> :Errors<CR>
+
 " Yggdroot/indentLine
 let g:indentLine_concealcursor = ""
 let g:indentLine_color_term = 239
@@ -181,9 +183,11 @@ set tags=tags;
 set autochdir
 
 " quick fix
+nnoremap <C-j> :cn<CR>
+nnoremap <C-k> :cp<CR>
 " location list
-nnoremap <expr><C-n> (&buftype=='quickfix'?':cn':':lnext')."\n"
-nnoremap <expr><C-p> (&buftype=='quickfix'?':cp':':lprev')."\n"
+nnoremap <C-n> :lnext<CR>
+nnoremap <C-p> :lprev<CR>
 
 "<leader>, to run current file
 map <leader>, :call CompileRun()<CR>
