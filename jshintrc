@@ -22,6 +22,8 @@
 	"nonstandard": false,
 	"indent": 4,
 	"expr": true,
+	"maxerr": true,
+
 	"predef": [
 		"gLog",
 		"gError",
