@@ -18,27 +18,32 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
 if mode == "dev"
 	if sys == "linux"
 		" auto complete
 		Plugin 'Valloric/YouCompleteMe'
 	endif
 endif
+
+if mode == "dev"
+    " js auto complete
+    Plugin 'marijnh/tern_for_vim'
+    " vim go
+    Plugin 'fatih/vim-go'
+    " syntax check
+    Plugin 'scrooloose/syntastic'
+endif
+
 " log file syntax highlighting
 Plugin 'dzeban/vim-log-syntax'
 " js syntax highlighting
 Plugin 'pangloss/vim-javascript'
-" js auto complete
-Plugin 'marijnh/tern_for_vim'
 " mkd
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-" vim go
-Plugin 'fatih/vim-go'
 " ts syntax highlighting
 Plugin 'leafgarland/typescript-vim'
-" syntax check
-Plugin 'scrooloose/syntastic'
 " indent line
 Plugin 'Yggdroot/indentLine'
 " LeaderF
@@ -56,17 +61,19 @@ if mode == "dev"
 	endif
 endif
 
+if mode == "dev"
+    " syntastic
+    let g:syntastic_javascript_checkers = ['jshint']
+    let g:syntastic_python_checkers = ['pylint']
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
+endif
+
 " python
 let g:python_recommended_style = 0
-
-" syntastic
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers = ['pylint']
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 nmap <F7> :Errors<CR>
 
