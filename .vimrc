@@ -30,7 +30,7 @@ if mode == "dev"
     " js auto complete
     Plugin 'marijnh/tern_for_vim'
     " vim go
-    Plugin 'fatih/vim-go'
+    " Plugin 'fatih/vim-go'
     " syntax check
     Plugin 'scrooloose/syntastic'
 endif
@@ -49,7 +49,7 @@ Plugin 'Yggdroot/indentLine'
 " LeaderF
 Plugin 'Yggdroot/LeaderF'
 " Tagbar
-Plugin 'majutsushi/tagbar'
+" Plugin 'majutsushi/tagbar'
 call vundle#end()            " required
 "---------------------------------------------------------------------
 
@@ -93,11 +93,11 @@ let g:Lf_WildIgnore = {
 let g:Lf_WorkingDirectoryMode = 'Ac'
 
 " Tagbar"
-nmap <F8> :TagbarToggle<CR>
-let g:tagbar_left = 1
-let g:tagbar_zoomwidth = 0
-let g:tagbar_autofocus = 1
-let g:tagbar_autoclose = 1
+" nmap <F8> :TagbarToggle<CR>
+" let g:tagbar_left = 1
+" let g:tagbar_zoomwidth = 0
+" let g:tagbar_autofocus = 1
+" let g:tagbar_autoclose = 1
 
 "---------------------------------------------------------------------
 
@@ -113,6 +113,7 @@ set sw=4
 set sts=4
 set autoindent
 set smartindent
+set linebreak
 "set cindent
 syntax on
 filetype plugin indent on
