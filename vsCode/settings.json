@@ -7,6 +7,7 @@
     "editor.renderWhitespace": "boundary",
     "editor.lineNumbers": "on",
     "editor.wordWrap": "on",
+    "editor.insertSpaces": false，
 
     "window.zoomLevel": 0,
 
