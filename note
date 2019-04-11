@@ -8,23 +8,6 @@ language messages zh_CN.utf-8
 set guioptions-=m
 set guioptions-=T
 
-# ubuntu crontab
-NODE=/usr/local/bin/node
-PUSHPATH=/mnt/DISK2/SRC/jack/push-server/script
-LOG=cron.log
-*>---* * *>--root>---cd $PUSHPATH && $NODE excutePushScheduleAll.js >> $LOG
-
-# .bashrc
-# grep
-export GREP_OPTIONS="--exclude-dir=\.svn"
-export GREP_OPTIONS+=" --exclude-dir=\.git"
-export GREP_OPTIONS+=" --exclude-dir=node_modules"
-export GREP_OPTIONS+=" --exclude-dir=echarts"
-export GREP_OPTIONS+=" --exclude-dir=jquery"
-export GREP_OPTIONS+=" --exclude-dir=bootstrap"
-
-export GREP_OPTIONS+=" --exclude=tags"
-
 #bash vi mmode
 set -o vi
 
