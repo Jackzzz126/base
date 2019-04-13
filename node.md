@@ -6,3 +6,7 @@
 4. sudo ln -s /usr/local/node-v8.9.3-linux-x64/bin/node /usr/local/bin/node 
 5. sudo ln -s /usr/local/node-v8.9.3-linux-x64/bin/npm /usr/local/bin/npm 
 6. add "prefix=/usr/local/" to .npmrc or run `npm config set prefix "/usr/local/"`
+
+# node dev env
+npm -g jshint, mocha, bunyan, forever
+

@@ -18,7 +18,3 @@ setw -g window-status-format "#I:bash"
 # centos .bashrc
 PS1="[\u:\w]\$ "
 
-# node dev env
-intall node, npm
-npm -g jshint, mocha, bunyan, forever
-
