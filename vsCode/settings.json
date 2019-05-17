@@ -1,22 +1,23 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.iconTheme": "vs-seti",
+	"workbench.colorTheme": "Solarized Dark",
+	"workbench.iconTheme": "vs-seti",
 
-    "editor.fontSize": 16,
-    "editor.fontFamily": "Consolas, 'Microsoft YaHei', 'Courier New', monospace",
-    "editor.renderWhitespace": "boundary",
-    "editor.lineNumbers": "on",
-    "editor.wordWrap": "on",
-    "editor.insertSpaces": false,
+	"editor.fontSize": 16,
+	"editor.fontFamily": "Consolas, 'Microsoft YaHei', 'Courier New', monospace",
+	"editor.renderWhitespace": "boundary",
+	"editor.lineNumbers": "on",
+	"editor.wordWrap": "on",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": "false,"
 
-    "window.zoomLevel": 0,
+	"window.zoomLevel": 0,
 
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "[cpp]": {
-        "editor.quickSuggestions": true
-    },
-    "[c]": {
-        "editor.quickSuggestions": true
-    }
+	"vim.useSystemClipboard": true,
+	"vim.hlsearch": true,
+	"[cpp]": {
+		"editor.quickSuggestions": true
+	},
+	"[c]": {
+		"editor.quickSuggestions": true
+	}
 }
