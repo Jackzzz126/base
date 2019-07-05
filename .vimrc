@@ -10,50 +10,44 @@ endif
 let mode = "dev"
 "---------------------------------------------------------------------
 
-"-------------------------- vundle ------------------------------------
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
+"-------------------------- vim-plug ------------------------------------
+call plug#begin('~/.vim/plugs')
 if mode == "dev"
 	if sys == "linux"
 		" auto complete
-		Plugin 'Valloric/YouCompleteMe'
+		Plug 'Valloric/YouCompleteMe'
 	endif
 endif
 
 if mode == "dev"
     " js auto complete
-    Plugin 'marijnh/tern_for_vim'
+    Plug 'marijnh/tern_for_vim'
     " vim go
     " Plugin 'fatih/vim-go'
     " syntax check
-    Plugin 'scrooloose/syntastic'
+    Plug 'scrooloose/syntastic'
 endif
 
 " log file syntax highlighting
-Plugin 'dzeban/vim-log-syntax'
+Plug 'dzeban/vim-log-syntax'
 " js syntax highlighting
-Plugin 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 " mkd
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 " ts syntax highlighting
-Plugin 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim'
 " indent line
-Plugin 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 " LeaderF
-Plugin 'Yggdroot/LeaderF'
+Plug 'Yggdroot/LeaderF'
 " Tagbar
 " Plugin 'majutsushi/tagbar'
-call vundle#end()            " required
+
+call plug#end()
 "---------------------------------------------------------------------
 
-"-------------------------- vundle setting ---------------------------
+"-------------------------- plug setting ---------------------------
 if mode == "dev"
 	if sys == "linux"
 		" YouCompleteMe
