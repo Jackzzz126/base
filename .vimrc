@@ -213,9 +213,8 @@ func! CompileRun()
 		exec "!java %<"
 	elseif &filetype == 'sh'
 		exec "!bash %"
-	elseif &filetype == 'py'
+	elseif &filetype == 'python'
 		exec "!python %"
-		exec "!python %<"
 	elseif &filetype == 'javascript'
 		exec "!node %"
 	endif
