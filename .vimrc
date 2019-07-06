@@ -180,8 +180,8 @@ vnoremap <leader># I#<esc>
 set autowrite
 
 "tags;
-set tags=tags;
-""set tags+=~/.vim/systags
+set tags=./.tags;,.tags;
+set tags+=~/.vim/systags
 set autochdir
 
 " quick fix
