@@ -83,6 +83,9 @@ if mode == "dev"
 
 	" ale
 	let g:ale_linters_explicit = 1
+	let g:ale_sign_column_always = 0
+	let g:ale_open_list = 0
+	let g:ale_list_window_size = 5
 	let g:ale_linters = {
 		\   'javascript': ['jshint'],
 		\}
@@ -102,8 +105,8 @@ if mode == "dev"
 	let g:ale_sign_error = '>>'
 	let g:ale_sign_warning = '--'
 
-	highlight clear ALEErrorSign
-	highlight clear ALEWarningSign
+	"highlight clear ALEErrorSign
+	"highlight clear ALEWarningSign
 	" gutentags
 	let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 	let g:gutentags_ctags_tagfile = '.tags'
