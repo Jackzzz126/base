@@ -54,6 +54,7 @@ if mode == "dev"
 	if sys == "linux"
 		" YouCompleteMe
 		set completeopt-=preview
+		let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 		let g:ycm_add_preview_to_completeopt = 0
 		let g:ycm_show_diagnostics_ui = 0
 		let g:ycm_server_log_level = 'info'
