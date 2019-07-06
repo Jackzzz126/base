@@ -20,14 +20,15 @@ if mode == "dev"
 endif
 
 if mode == "dev"
-    " js auto complete
-    Plug 'marijnh/tern_for_vim'
-    " vim go
-    " Plugin 'fatih/vim-go'
-    " syntax check
-    Plug 'scrooloose/syntastic'
-    " gutentags
-    Plug 'ludovicchabant/vim-gutentags'
+	" js auto complete
+	Plug 'marijnh/tern_for_vim'
+	" vim go
+	" Plugin 'fatih/vim-go'
+	" syntax check
+	"Plug 'scrooloose/syntastic'
+	Plug 'w0rp/ale'
+	" gutentags
+	Plug 'ludovicchabant/vim-gutentags'
 endif
 
 " log file syntax highlighting
@@ -64,21 +65,57 @@ if mode == "dev"
 		let g:ycm_key_invoke_completion = '<c-z>'
 		set completeopt=menu,menuone
 		let g:ycm_semantic_triggers =  {
-		           \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-		           \ 'cs,lua,javascript': ['re!\w{2}'],
-		           \ }
+					\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+					\ 'cs,lua,javascript': ['re!\w{2}'],
+					\ }
 	endif
 endif
 
 if mode == "dev"
-    " syntastic
-    let g:syntastic_javascript_checkers = ['jshint']
-    let g:syntastic_python_checkers = ['pylint']
-    set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
-    set statusline+=%*
-    let g:syntastic_check_on_open = 1
-    let g:syntastic_check_on_wq = 0
+	" syntastic
+	"let g:syntastic_javascript_checkers = ['jshint']
+	"let g:syntastic_python_checkers = ['pylint']
+	"set statusline+=%#warningmsg#
+	"set statusline+=%{SyntasticStatuslineFlag()}
+	"set statusline+=%*
+	"let g:syntastic_check_on_open = 1
+	"let g:syntastic_check_on_wq = 0
+
+	" ale
+	let g:ale_linters_explicit = 1
+	let g:ale_linters = {
+		\   'javascript': ['jshint'],
+		\}
+	let g:ale_completion_delay = 500
+	let g:ale_echo_delay = 20
+	let g:ale_lint_delay = 500
+	let g:ale_echo_msg_format = '[%linter%] %code: %%s'
+	let g:ale_lint_on_text_changed = 'normal'
+	let g:ale_lint_on_insert_leave = 1
+	let g:airline#extensions#ale#enabled = 1
+
+	let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
+	let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
+	let g:ale_c_cppcheck_options = ''
+	let g:ale_cpp_cppcheck_options = ''
+
+	let g:ale_sign_error = '>>'
+	let g:ale_sign_warning = '--'
+
+	highlight clear ALEErrorSign
+	highlight clear ALEWarningSign
+	" gutentags
+	let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+	let g:gutentags_ctags_tagfile = '.tags'
+	let s:vim_tags = expand('~/.cache/tags')
+	let g:gutentags_cache_dir = s:vim_tags
+	if !isdirectory(s:vim_tags)
+		silent! call mkdir(s:vim_tags, 'p')
+	endif
+
+	let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+	let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+	let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 endif
 
 " python
@@ -96,9 +133,9 @@ let g:indentLine_first_char = '┊'
 " LeaderF
 let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_WildIgnore = {
-            \ 'dir': ['.svn','.git','.hg'],
-            \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
-            \}
+			\ 'dir': ['.svn','.git','.hg'],
+			\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+			\}
 let g:Lf_WorkingDirectoryMode = 'Ac'
 
 " Tagbar"
@@ -108,18 +145,6 @@ let g:Lf_WorkingDirectoryMode = 'Ac'
 " let g:tagbar_autofocus = 1
 " let g:tagbar_autoclose = 1
 
-" gutentags
-let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
-let g:gutentags_ctags_tagfile = '.tags'
-let s:vim_tags = expand('~/.cache/tags')
-let g:gutentags_cache_dir = s:vim_tags
-if !isdirectory(s:vim_tags)
-   silent! call mkdir(s:vim_tags, 'p')
-endif
-
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 "---------------------------------------------------------------------
 
 "-------------------------- comm ------------------------------------
