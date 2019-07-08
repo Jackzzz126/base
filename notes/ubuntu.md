@@ -11,6 +11,13 @@ GSSAPIDelegateCredentials no
   UseDNS no
 3. 执行"/etc/init.d/ssh restart"，重启ssh服务
 
+# 修改ssh监听端口
+vi /etc/ssh/sshd_config
+执行"/etc/init.d/ssh restart"，重启ssh服务
+
+# 添加用户到sudo组
+vi /etc/group
+
 #用户管理
 
 * 添加用户
@@ -25,3 +32,4 @@ NODE=/usr/local/bin/node
 PUSHPATH=/mnt/DISK2/SRC/jack/push-server/script
 LOG=cron.log
 *>---* * *>--root>---cd $PUSHPATH && $NODE excutePushScheduleAll.js >> $LOG
+
