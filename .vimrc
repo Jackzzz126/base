@@ -32,6 +32,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/LeaderF'
 " Tagbar
 " Plugin 'majutsushi/tagbar'
+" cpp syntax highlighting
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 call plug#end()
 "--------------------------eof plug-------------------------------------------
