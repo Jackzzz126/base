@@ -1,42 +1,28 @@
 set nocp
 
-"-------------------------- define ------------------------------------
-let sys = "linux"
-if has("macunix")
-	sys = "mac"
-elseif has("win16") || has("win32") || has("win64") || has("win95")
-	sys = "windows"
-endif
-let mode = "dev"
-"---------------------------------------------------------------------
-
 "-------------------------- vim-plug ------------------------------------
 call plug#begin('~/.vim/plugs')
-if mode == "dev"
-	if sys == "linux"
-		" auto complete
-		Plug 'Valloric/YouCompleteMe'
-	endif
-endif
+" auto complete
+Plug 'Valloric/YouCompleteMe'
+" js auto complete
+Plug 'marijnh/tern_for_vim'
 
-if mode == "dev"
-	" js auto complete
-	Plug 'marijnh/tern_for_vim'
-	" vim go
-	" Plugin 'fatih/vim-go'
-	" syntax check
-	"Plug 'scrooloose/syntastic'
-	Plug 'w0rp/ale'
-	" gutentags
-	Plug 'ludovicchabant/vim-gutentags'
-endif
+" syntax check
+Plug 'w0rp/ale'
+
+" c++ auto tag
+Plug 'ludovicchabant/vim-gutentags'
+
+" GO
+" Plugin 'fatih/vim-go'
 
 " log file syntax highlighting
 Plug 'dzeban/vim-log-syntax'
 " js syntax highlighting
 Plug 'pangloss/vim-javascript'
-" mkd
+" mkd align
 Plug 'godlygeek/tabular'
+" mkd syntax highlighting
 Plug 'plasticboy/vim-markdown'
 " ts syntax highlighting
 Plug 'leafgarland/typescript-vim'
@@ -48,83 +34,69 @@ Plug 'Yggdroot/LeaderF'
 " Plugin 'majutsushi/tagbar'
 
 call plug#end()
-"---------------------------------------------------------------------
+"--------------------------eof plug-------------------------------------------
 
 "-------------------------- plug setting ---------------------------
-if mode == "dev"
-	if sys == "linux"
-		" YouCompleteMe
-		set completeopt-=preview
-		let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
-		let g:ycm_add_preview_to_completeopt = 0
-		let g:ycm_show_diagnostics_ui = 0
-		let g:ycm_server_log_level = 'info'
-		let g:ycm_min_num_identifier_candidate_chars = 2
-		let g:ycm_collect_identifiers_from_comments_and_strings = 1
-		let g:ycm_complete_in_strings=1
-		let g:ycm_key_invoke_completion = '<c-z>'
-		set completeopt=menu,menuone
-		let g:ycm_semantic_triggers =  {
-					\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-					\ 'cs,lua,javascript': ['re!\w{2}'],
-					\ }
-	endif
+" YouCompleteMe
+set completeopt-=preview
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_server_log_level = 'info'
+let g:ycm_min_num_identifier_candidate_chars = 2
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_complete_in_strings=1
+let g:ycm_key_invoke_completion = '<c-z>'
+set completeopt=menu,menuone
+let g:ycm_semantic_triggers =  {
+			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+			\ 'cs,lua,javascript': ['re!\w{2}'],
+			\ }
+
+" syntastic
+"let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_python_checkers = ['pylint']
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+
+" ale
+let g:ale_linters_explicit = 1
+let g:ale_linters = {
+	\   'javascript': ['jshint'],
+	\}
+let g:ale_completion_delay = 500
+let g:ale_echo_delay = 20
+let g:ale_lint_delay = 500
+let g:ale_echo_msg_format = '[%linter%] %code: %%s'
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+let g:airline#extensions#ale#enabled = 1
+
+let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
+let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
+let g:ale_c_cppcheck_options = ''
+let g:ale_cpp_cppcheck_options = ''
+
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+
+" gutentags
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+let g:gutentags_ctags_tagfile = '.tags'
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+if !isdirectory(s:vim_tags)
+	silent! call mkdir(s:vim_tags, 'p')
 endif
-
-if mode == "dev"
-	" syntastic
-	"let g:syntastic_javascript_checkers = ['jshint']
-	"let g:syntastic_python_checkers = ['pylint']
-	"set statusline+=%#warningmsg#
-	"set statusline+=%{SyntasticStatuslineFlag()}
-	"set statusline+=%*
-	"let g:syntastic_check_on_open = 1
-	"let g:syntastic_check_on_wq = 0
-
-	" ale
-	let g:ale_linters_explicit = 1
-	let g:ale_sign_column_always = 0
-	let g:ale_open_list = 0
-	let g:ale_list_window_size = 5
-	let g:ale_linters = {
-		\   'javascript': ['jshint'],
-		\}
-	let g:ale_completion_delay = 500
-	let g:ale_echo_delay = 20
-	let g:ale_lint_delay = 500
-	let g:ale_echo_msg_format = '[%linter%] %code: %%s'
-	let g:ale_lint_on_text_changed = 'normal'
-	let g:ale_lint_on_insert_leave = 1
-	let g:airline#extensions#ale#enabled = 1
-
-	let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
-	let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
-	let g:ale_c_cppcheck_options = ''
-	let g:ale_cpp_cppcheck_options = ''
-
-	let g:ale_sign_error = '>>'
-	let g:ale_sign_warning = '--'
-
-	"highlight clear ALEErrorSign
-	"highlight clear ALEWarningSign
-	" gutentags
-	let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
-	let g:gutentags_ctags_tagfile = '.tags'
-	let s:vim_tags = expand('~/.cache/tags')
-	let g:gutentags_cache_dir = s:vim_tags
-	if !isdirectory(s:vim_tags)
-		silent! call mkdir(s:vim_tags, 'p')
-	endif
-
-	let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-	let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
-	let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-endif
-
-" python
-let g:python_recommended_style = 0
-
-nmap <F7> :Errors<CR>
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
 " Yggdroot/indentLine
 let g:indentLine_concealcursor = ""
@@ -148,7 +120,7 @@ let g:Lf_WorkingDirectoryMode = 'Ac'
 " let g:tagbar_autofocus = 1
 " let g:tagbar_autoclose = 1
 
-"---------------------------------------------------------------------
+"--------------------------eof plug setting-------------------------------------------
 
 "-------------------------- comm ------------------------------------
 "comm
@@ -202,18 +174,6 @@ set suffixesadd+=.json
 "abbreviations
 "iabbrev /* /**/<left><left><backspace>
 
-" maps
-let mapleader = ","
-" normal
-nnoremap <leader>e :split $MYVIMRC<cr>
-nnoremap <leader>r :source $MYVIMRC<cr>:echom ".vimrc reloaded!"<cr>
-autocmd FileType go nmap <leader>b  <Plug>(go-build)
-autocmd FileType go nmap <leader>,  <Plug>(go-run)
-nnoremap K 10k
-nnoremap J 10j
-" LeaderF
-nnoremap <leader>t :LeaderfTag<cr>
-
 " insert
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
@@ -246,6 +206,28 @@ nnoremap <C-k> :cp<CR>
 nnoremap <C-n> :lnext<CR>
 nnoremap <C-p> :lprev<CR>
 
+" tmux
+if exists('$TMUX')
+	autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
+	autocm VimLeave * call system("tmux setw automatic-rename")
+endif
+
+" python
+let g:python_recommended_style = 0
+"--------------------------eof comm-------------------------------------
+
+"--------------------------leader--------------------------------------
+" maps
+let mapleader = ","
+" normal
+nnoremap <leader>e :split $MYVIMRC<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>:echom ".vimrc reloaded!"<cr>
+" Go
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>,  <Plug>(go-run)
+" LeaderF
+nnoremap <leader>t :LeaderfTag<cr>
+
 "<leader>, to run current file
 map <leader>, :call CompileRun()<CR>
 func! CompileRun()
@@ -268,12 +250,6 @@ func! CompileRun()
 		exec "!node %"
 	endif
 endfunc
-
-if exists('$TMUX')
-	autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
-	autocm VimLeave * call system("tmux setw automatic-rename")
-endif
-
-"---------------------------------------------------------------------
+"-------------------------eof leader----------------------------------------
 
 
