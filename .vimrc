@@ -68,6 +68,7 @@ let g:ycm_semantic_triggers =  {
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
 	\   'javascript': ['jshint'],
+	\   'cpp': ['gcc', 'cppcheck'],
 	\}
 let g:ale_completion_delay = 500
 let g:ale_echo_delay = 20
