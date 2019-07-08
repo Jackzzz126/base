@@ -70,24 +70,14 @@ let g:ale_linters = {
 	\   'javascript': ['jshint'],
 	\   'cpp': ['gcc', 'cppcheck'],
 	\}
-let g:ale_completion_delay = 500
-let g:ale_echo_delay = 20
-let g:ale_lint_delay = 500
 let g:ale_echo_msg_format = '[%linter%] %code: %%s'
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
-let g:airline#extensions#ale#enabled = 1
 
 let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
-let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'
+let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++11 -isystem "/usr/include/eigen3"'
 let g:ale_c_cppcheck_options = ''
 let g:ale_cpp_cppcheck_options = ''
-
-let g:ale_sign_error = '>>'
-let g:ale_sign_warning = '--'
-
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
 
 " gutentags
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
@@ -97,6 +87,7 @@ let g:gutentags_cache_dir = s:vim_tags
 if !isdirectory(s:vim_tags)
 	silent! call mkdir(s:vim_tags, 'p')
 endif
+
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
