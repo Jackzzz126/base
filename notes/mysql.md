@@ -1,3 +1,8 @@
+# install init
+* install: sudo apt install mysql-client mysql-server
+* default user & pwd: sudo cat /etc/mysql/debian.cnf
+* creat db: create database if not exists db_name default charset utf8 collate utf8_general_ci;
+
 # 权限管理
 ```sql
 grant all privileges on *.* to jack@'localhost' identified by "jack" with grant option;
@@ -16,7 +21,7 @@ drop user 'jack'@'localhost';
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
 ```
 
-# 导出
+# 导入导出
 ## 导出整个数据库结构和数据
 mysqldump -h localhost -uroot -p123456 database > dump.sql
 
@@ -29,6 +34,11 @@ mysqldump -h localhost -uroot -p123456  -d database > dump.sql
 ## 导出单个数据表结构（不包含数据）
 mysqldump -h localhost -uroot -p123456  -d database table > dump.sql
 
+## 导入
+```sql
+mysql -uname -ppwd dbName < xxx.sql
+```
+
 # 重置表
 ## 方法一(效率高，谨慎使用)：
 truncate table table_name;
@@ -38,5 +48,4 @@ truncate table table_name;
 ## 方法二(数据量大则效率低)：
 delete from table_name;
 alter table table_name auto_increment= 1;
-
 
