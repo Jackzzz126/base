@@ -49,3 +49,8 @@ truncate table table_name;
 delete from table_name;
 alter table table_name auto_increment= 1;
 
+## 忽略外键约束
+SET FOREIGN_KEY_CHECKS = 0;
+delete from xxxx;
+SET FOREIGN_KEY_CHECKS = 1;
+
