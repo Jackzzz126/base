@@ -207,7 +207,9 @@ if exists('$TMUX')
 endif
 
 " python
-let g:python_recommended_style = 0
+let g:python_recommended_style = 1
+autocmd FileType python set expandtab       "tab替换为空格键
+
 "--------------------------eof comm-------------------------------------
 
 "--------------------------leader--------------------------------------
