@@ -4,6 +4,8 @@ set nocp
 call plug#begin('~/.vim/plugs')
 " auto complete
 Plug 'Valloric/YouCompleteMe'
+" tab nine
+" Plug 'zxqfl/tabnine-vim'
 " js auto complete
 Plug 'marijnh/tern_for_vim'
 
@@ -35,21 +37,26 @@ Plug 'Yggdroot/LeaderF'
 " cpp syntax highlighting
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+" color scheme
+Plug 'altercation/vim-colors-solarized'
+
 call plug#end()
 "--------------------------eof plug-------------------------------------------
 
 "-------------------------- plug setting ---------------------------
 " YouCompleteMe
 set completeopt-=preview
-let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_server_log_level = 'info'
 let g:ycm_min_num_identifier_candidate_chars = 2
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+let g:ycm_enable_diagnostic_signs=0
+let g:ycm_enable_diagnostic_highlighting=0
+let g:ycm_show_diagnostics_ui=0
+let g:ycm_server_log_level = 'info'
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let ycm_complete_in_strings=1
 let g:ycm_complete_in_strings=1
 let g:ycm_key_invoke_completion = '<c-z>'
-set completeopt=menu,menuone
 let g:ycm_semantic_triggers =  {
 			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
 			\ 'cs,lua,javascript': ['re!\w{2}'],
@@ -74,8 +81,8 @@ let g:ale_echo_msg_format = '[%linter%] %code: %%s'
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
-let g:ale_c_gcc_options = '-Wall -O2 -std=c99'
-let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++11 -isystem "/usr/include/eigen3"'
+let g:ale_c_gcc_options = '-Wall -O0 -std=c99'
+let g:ale_cpp_gcc_options = '-Wall -O0 -std=c++11 -isystem "/usr/include/eigen3"'
 let g:ale_c_cppcheck_options = ''
 let g:ale_cpp_cppcheck_options = ''
 
@@ -209,6 +216,14 @@ endif
 " python
 let g:python_recommended_style = 1
 autocmd FileType python set expandtab       "tab替换为空格键
+
+" color scheme
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+let g:solarized_visibility="low"
+syntax enable
+set background=dark
+colorscheme solarized
 
 "--------------------------eof comm-------------------------------------
 
