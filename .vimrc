@@ -37,7 +37,7 @@ Plug 'Yggdroot/LeaderF'
 " cpp syntax highlighting
 Plug 'octol/vim-cpp-enhanced-highlight'
 " color scheme
-"Plug 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 "--------------------------eof plug-------------------------------------------
@@ -217,12 +217,12 @@ let g:python_recommended_style = 1
 autocmd FileType python set expandtab       "tab替换为空格键
 
 " color scheme
-" let g:solarized_termcolors=256
-" let g:solarized_termtrans=1
-" let g:solarized_visibility="low"
-" syntax enable
-" set background=dark
-" colorscheme solarized
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+let g:solarized_visibility="low"
+syntax enable
+set background=dark
+colorscheme solarized
 
 "--------------------------eof comm-------------------------------------
 
