@@ -1,4 +1,4 @@
-# install init
+# install & init
 * install: sudo apt install mysql-client mysql-server
 * default user & pwd: sudo cat /etc/mysql/debian.cnf
 * creat db: create database if not exists db_name default charset utf8 collate utf8_general_ci;
