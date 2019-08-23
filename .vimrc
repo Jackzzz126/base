@@ -80,7 +80,7 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
 let g:ale_c_gcc_options = '-Wall -O0 -std=c99'
-let g:ale_cpp_gcc_options = '-Wall -O0 -std=c++11'
+let g:ale_cpp_gcc_options = '-Wall -O0 -std=c++11 -i/home/zz/codes/o3d-cpp/include'
 let g:ale_c_cppcheck_options = ''
 let g:ale_cpp_cppcheck_options = ''
 
