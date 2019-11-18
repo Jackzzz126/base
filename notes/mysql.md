@@ -3,6 +3,14 @@
 * default user & pwd: sudo cat /etc/mysql/debian.cnf
 * creat db: create database if not exists db_name default charset utf8 collate utf8_general_ci;
 
+# 用户管理
+```sql
+create user 'userName'@'%' identified by "aaa";
+rename user 'jack'@'%' to 'jim'@'%';
+drop user 'jack'@'localhost';
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
+```
+
 # 权限管理
 ```sql
 grant all privileges on *.* to jack@'localhost' identified by "jack" with grant option;
@@ -12,14 +20,6 @@ revoke delete on *.* from 'jack'@'localhost';
 ```
 1. WITH GRANT OPTION 这个选项表示该用户可以将自己拥有的权限授权给别人
 2. 8.0以上GRANT不再与IDENTIFIED BY 联用(create a user with GRANT are not allowed)
-
-# 用户管理
-```sql
-create user 'userName'@'%' identified by "aaa";
-rename user 'jack'@'%' to 'jim'@'%';
-drop user 'jack'@'localhost';
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
-```
 
 # 导入导出
 ## 导出整个数据库结构和数据
