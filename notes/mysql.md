@@ -21,6 +21,10 @@ revoke delete on *.* from 'jack'@'localhost';
 1. WITH GRANT OPTION 这个选项表示该用户可以将自己拥有的权限授权给别人
 2. 8.0以上GRANT不再与IDENTIFIED BY 联用(create a user with GRANT are not allowed)
 
+# 外网访问
+1. sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+2. sudo systemctl restart mysql
+
 # 导入导出
 ## 导出整个数据库结构和数据
 mysqldump -h localhost -uroot -p123456 database > dump.sql
