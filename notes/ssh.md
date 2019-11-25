@@ -19,9 +19,14 @@ Host server2Conn
     User root
     ProxyCommand ssh -p 20000 跳板服务器用户名@跳板服务器 -W %h:%p
 
-* 除root外，禁止密码登录
+# 除root外，禁止密码登录
+/etc/ssh/ssd_config
 PasswordAuthentication no
 Match User root
     PasswordAuthentication yes
+
+# denyhosts
+* 服务名：daemon-control
+* 配置文件路径：/usr/share/denyhosts/denyhosts.cfg
 
 
