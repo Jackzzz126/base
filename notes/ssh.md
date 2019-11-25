@@ -19,4 +19,9 @@ Host server2Conn
     User root
     ProxyCommand ssh -p 20000 跳板服务器用户名@跳板服务器 -W %h:%p
 
+* 除root外，禁止密码登录
+PasswordAuthentication no
+Match User root
+    PasswordAuthentication yes
+
 
