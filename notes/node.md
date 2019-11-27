@@ -10,3 +10,10 @@
 # node dev env
 sudo npm install -g jshint mocha bunyan forever
 
+# nvm模式
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+>test if success, need relogin
+command -v nvm
+nvm install 8.11.1
+npm install -g pm2@4.1.2
+
