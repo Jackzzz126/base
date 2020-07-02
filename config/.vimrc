@@ -13,7 +13,7 @@ Plug 'marijnh/tern_for_vim'
 Plug 'w0rp/ale'
 
 " c++ auto tag
-Plug 'ludovicchabant/vim-gutentags'
+"Plug 'ludovicchabant/vim-gutentags'
 
 " GO
 " Plugin 'fatih/vim-go'
@@ -27,7 +27,7 @@ Plug 'godlygeek/tabular'
 " mkd syntax highlighting
 Plug 'plasticboy/vim-markdown'
 " ts syntax highlighting
-Plug 'leafgarland/typescript-vim'
+"Plug 'leafgarland/typescript-vim'
 " indent line
 Plug 'Yggdroot/indentLine'
 " LeaderF
@@ -72,10 +72,11 @@ let g:ycm_semantic_triggers =  {
 " ale
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
-	\   'javascript': ['jshint'],
+	\   'javascript': ['eslint', 'jshint'],
 	\   'cpp': ['gcc', 'cppcheck'],
 	\}
 let g:ale_echo_msg_format = '[%linter%] %code: %%s'
+let g:ale_lint_on_enter = 1
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
@@ -107,7 +108,7 @@ let g:indentLine_first_char = '┊'
 " LeaderF
 let g:Lf_DefaultMode = 'FullPath'
 let g:Lf_WildIgnore = {
-			\ 'dir': ['.svn','.git','.hg'],
+			\ 'dir': ['.svn','.git','.hg', 'webserver/node_modules'],
 			\ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
 			\}
 let g:Lf_WorkingDirectoryMode = 'Ac'
@@ -127,13 +128,13 @@ set backspace=indent,eol,start
 "visual
 set ruler
 set number
-set ts=4
-set sw=4
-"set expandtab
-set sts=4
+set shiftwidth=4
+set expandtab
+set tabstop=4
+set softtabstop=4
 set autoindent
 set smartindent
-set linebreak
+"set linebreak
 "set cindent
 syntax on
 filetype plugin indent on

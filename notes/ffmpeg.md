@@ -1,4 +1,4 @@
-## ffmege
+## ffmpeg
 yum install epel-release
 
 1) CentOS 7
