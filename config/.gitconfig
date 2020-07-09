@@ -5,6 +5,9 @@
 	editor = vim
 	filemode = false
 	quotepath = false
+	autocrlf= false
+	safecrlf= true
+	whitespace = cr-at-eol
 [color]
 	diff = auto
 	status = auto
@@ -17,3 +20,7 @@
 	sm = submodule
 [push]
 	default = simple
+[http]
+	postBuffer = 524288000
+[credential]
+	helper = store
