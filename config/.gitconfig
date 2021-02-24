@@ -5,8 +5,8 @@
 	editor = vim
 	filemode = false
 	quotepath = false
-	autocrlf= false
-	safecrlf= true
+	autocrlf = false
+	safecrlf = true
 	whitespace = cr-at-eol
 [color]
 	diff = auto
@@ -18,9 +18,13 @@
 	co = checkout
 	br = branch
 	sm = submodule
+	rs = restore --staged
 [push]
 	default = simple
+[pull]
+	rebase = true
 [http]
 	postBuffer = 524288000
+	sslVerify = false
 [credential]
-	helper = store
+	helper = wincred
