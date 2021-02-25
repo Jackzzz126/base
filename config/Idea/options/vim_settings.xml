@@ -1,0 +1,420 @@
+<application>
+  <component name="VimEditorSettings">
+    <editor />
+  </component>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">XDxjYXRlTmFtZUxpc3RcPg==</entry>
+        <entry encoding="base64">XDxnZXRCb3NGaW5hbmNlXD4=</entry>
+        <entry encoding="base64">XDxibzJTdW1tYXJ5Vm9cPg==</entry>
+        <entry encoding="base64">XDx2b3NcPg==</entry>
+        <entry encoding="base64">XDx0aW1lRGltZW5zaW9uRW51bVw+</entry>
+        <entry>aa</entry>
+        <entry>dateList</entry>
+        <entry encoding="base64">XDxjYXRlQ29kZUxpc3RcPg==</entry>
+        <entry encoding="base64">XDxnZXRWYWx1ZUZyb21NYXBcPg==</entry>
+        <entry encoding="base64">XDxnZXRWb3NcPg==</entry>
+        <entry encoding="base64">XDxkYXRlU3RyTGlzdFw+</entry>
+        <entry>vos</entry>
+        <entry>addSum</entry>
+        <entry>boolean addSum</entry>
+        <entry encoding="base64">XDxhZGRTdW1cPg==</entry>
+        <entry encoding="base64">XDxibzJWb1w+</entry>
+        <entry encoding="base64">XDx2bzJDaGFydFZvXD4=</entry>
+        <entry encoding="base64">XDxpbmNvbWVNb21cPg==</entry>
+        <entry encoding="base64">XDxkZWxOb2RlSGVscGVyXD4=</entry>
+        <entry>stream</entry>
+      </history-search>
+      <history-cmd>
+        <entry>e</entry>
+        <entry>we</entry>
+        <entry>w]</entry>
+        <entry>ww</entry>
+        <entry>;w</entry>
+        <entry>2w</entry>
+        <entry>lnext</entry>
+        <entry>lprev</entry>
+        <entry>w2</entry>
+        <entry>qa</entry>
+        <entry>q</entry>
+        <entry>w\</entry>
+        <entry>qa!</entry>
+        <entry encoding="base64">JzwsJz53ISB+Ly52aW14ZmVy</entry>
+        <entry>r ~/.vimxfer</entry>
+        <entry>w'</entry>
+        <entry encoding="base64">JzwsJz53</entry>
+        <entry>wq</entry>
+        <entry>q!</entry>
+        <entry>w</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimKeySettings">
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed O</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed I</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed CLOSE_BRACKET</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed P</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed N</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed OPEN_BRACKET</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed H</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed A</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed S</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed R</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed L</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed X</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed E</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed J</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed W</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed D</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed Q</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed G</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed U</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="D:/code/bi/alpha-bi-web/src/main/java/com/jd/jdd/alpha/bi/web/controller/rest/GrossProfitRest.java" timestamp="1613973212964">
+        <mark key="'" line="86" column="0" />
+        <mark key="[" line="326" column="29" />
+        <mark key="]" line="326" column="30" />
+        <mark key="." line="326" column="30" />
+        <mark key="^" line="340" column="34" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1614149831533">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="D:/code/java-test/test-project/problem-files/700.二叉搜索树中的搜索.java" timestamp="1614237475392">
+        <mark key="[" line="23" column="0" />
+        <mark key="]" line="23" column="0" />
+        <mark key="." line="23" column="0" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" timestamp="1614219980793">
+        <mark key="a" line="162" column="15" />
+        <mark key="'" line="220" column="16" />
+        <mark key="[" line="186" column="19" />
+        <mark key="]" line="380" column="38" />
+        <mark key="." line="380" column="37" />
+        <mark key="^" line="380" column="38" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/BusinessCategoryManagerImpl.java" timestamp="1613974415684">
+        <mark key="[" line="166" column="12" />
+        <mark key="]" line="166" column="17" />
+        <mark key="." line="166" column="16" />
+        <mark key="^" line="166" column="17" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-common/src/main/java/com/jd/jdd/alpha/bi/common/utils/DateUtils.java" timestamp="1614048137582">
+        <mark key="'" line="508" column="0" />
+        <mark key="[" line="442" column="41" />
+        <mark key="]" line="442" column="42" />
+        <mark key="." line="442" column="42" />
+        <mark key="^" line="441" column="69" />
+      </file>
+      <file name="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" timestamp="1614239243580">
+        <mark key="[" line="27" column="1" />
+        <mark key="]" line="28" column="0" />
+        <mark key="." line="28" column="0" />
+        <mark key="^" line="28" column="0" />
+      </file>
+      <file name="/a.dummy" timestamp="1614219973592">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="D:/code/java-test/test-project/problem-files/701.二叉搜索树中的插入操作.java" timestamp="1614237897109">
+        <mark key="[" line="35" column="49" />
+        <mark key="]" line="35" column="54" />
+        <mark key="." line="35" column="53" />
+        <mark key="^" line="35" column="54" />
+      </file>
+      <file name="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/TreeNode.java" timestamp="1614240785678">
+        <mark key="'" line="34" column="57" />
+        <mark key="[" line="25" column="50" />
+        <mark key="]" line="31" column="8" />
+        <mark key="." line="31" column="7" />
+        <mark key="^" line="31" column="8" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" timestamp="1614241240364">
+        <mark key="a" line="589" column="24" />
+        <mark key="'" line="551" column="40" />
+        <mark key="[" line="383" column="111" />
+        <mark key="]" line="384" column="66" />
+        <mark key="." line="384" column="65" />
+        <mark key="^" line="384" column="66" />
+      </file>
+      <file name="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" timestamp="1614237100197">
+        <mark key="'" line="50" column="41" />
+        <mark key="[" line="60" column="0" />
+        <mark key="]" line="60" column="0" />
+        <mark key="." line="60" column="0" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/bo/GrossProfitBo.java" timestamp="1613975827575">
+        <mark key="[" line="43" column="23" />
+        <mark key="]" line="43" column="26" />
+        <mark key="." line="43" column="25" />
+        <mark key="^" line="43" column="26" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/BusinessCategoryManager.java" timestamp="1613974382321">
+        <mark key="'" line="57" column="62" />
+        <mark key="[" line="98" column="15" />
+        <mark key="]" line="98" column="15" />
+        <mark key="^" line="101" column="43" />
+        <mark key="." line="98" column="15" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-common/src/main/java/com/jd/jdd/alpha/bi/common/enums/IndustryEnum.java" timestamp="1614052157139">
+        <mark key="'" line="8" column="0" />
+        <mark key="[" line="15" column="23" />
+        <mark key="]" line="15" column="27" />
+        <mark key="." line="15" column="26" />
+        <mark key="^" line="15" column="27" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-web/src/main/updates/v3.5/update.ddl" timestamp="1614065356120">
+        <mark key="'" line="67" column="96" />
+        <mark key="[" line="68" column="0" />
+        <mark key="]" line="68" column="0" />
+        <mark key="." line="68" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1613966356566">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/IncomeManager.java" timestamp="1614042171991">
+        <mark key="'" line="25" column="4" />
+        <mark key="[" line="85" column="33" />
+        <mark key="]" line="85" column="38" />
+        <mark key="." line="85" column="37" />
+        <mark key="^" line="85" column="38" />
+      </file>
+      <file name="D:/code/bi/alpha-bi-web/src/main/java/com/jd/jdd/alpha/bi/web/controller/rest/IncomeRest.java" timestamp="1614132566264">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="308" column="28" />
+        <mark key="]" line="308" column="35" />
+        <mark key="." line="308" column="34" />
+        <mark key="^" line="308" column="35" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="412" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="806" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="411" column="51" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="410" column="31" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="736" column="20" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="376" column="4" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="224" column="8" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="181" column="35" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="86" column="40" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="89" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="92" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="189" column="40" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="195" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="198" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="257" column="40" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="188" column="40" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="194" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="197" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="256" column="40" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="495" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="115" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="46" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="658" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="118" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="120" column="69" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="275" column="31" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="605" column="8" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="199" column="21" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="202" column="12" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="218" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="237" column="28" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="601" column="21" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="656" column="28" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="604" column="12" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="631" column="34" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="662" column="4" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="596" column="170" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="654" column="8" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="616" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="653" column="12" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="617" column="49" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="284" column="8" filename="D:/code/bi/alpha-bi-web/src/main/java/com/jd/jdd/alpha/bi/web/controller/rest/IncomeRest.java" />
+      <jump line="319" column="41" filename="D:/code/bi/alpha-bi-web/src/main/java/com/jd/jdd/alpha/bi/web/controller/rest/IncomeRest.java" />
+      <jump line="0" column="0" filename="D:/code/bi/alpha-bi-web/src/main/java/com/jd/jdd/alpha/bi/web/controller/rest/IncomeRest.java" />
+      <jump line="56" column="4" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="44" column="127" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="668" column="0" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="405" column="16" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="387" column="43" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="269" column="50" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="610" column="162" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="678" column="171" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="0" column="0" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="51" column="48" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="157" column="12" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="123" column="12" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="98" column="49" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="95" column="0" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="161" column="12" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="135" column="49" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="299" column="20" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="52" column="118" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="47" column="80" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="27" column="0" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="58" column="4" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="54" column="4" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="34" column="28" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="22" column="15" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="24" column="0" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="29" column="4" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="66" column="0" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="40" column="48" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="67" column="4" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="57" column="4" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="55" column="4" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="36" column="0" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="35" column="7" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="69" column="0" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="68" column="0" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="217" column="0" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="223" column="48" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="218" column="23" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="221" column="16" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/GrossProfitManagerImpl.java" />
+      <jump line="41" column="17" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="26" column="91" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="56" column="4" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="27" column="25" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="47" column="17" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="71" column="4" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="63" column="4" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="46" column="0" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="34" column="55" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="23" column="55" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="50" column="41" filename="D:/code/java-test/test-project/problem-files/450.删除二叉搜索树中的节点.java" />
+      <jump line="38" column="1" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/AlgTest.java" />
+      <jump line="66" column="59" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/TreeNode.java" />
+      <jump line="25" column="57" filename="D:/code/java-test/test-project/src/main/java/org/jack/SpringBootTest/TreeNode.java" />
+      <jump line="384" column="58" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="379" column="48" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+      <jump line="551" column="40" filename="D:/code/bi/alpha-bi-manager/src/main/java/com/jd/jdd/alpha/bi/manager/impl/IncomeManagerImpl.java" />
+    </jumps>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="*" type="4">
+        <text>ing</text>
+      </register>
+      <register name="-" type="4">
+        <text>ing</text>
+      </register>
+      <register name="/" type="4">
+        <text>stream</text>
+      </register>
+      <register name="0" type="4">
+        <text>ing</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIHB1YmxpYyBUcmVlTm9kZSBpbnNlcnRJbnRvQlNUKFRyZWVOb2RlIHJvb3QsIGludCB2YWwpIHsKICAgICAgICBpZihyb290ID09IG51bGwpIHsKICAgICAgICAgICAgVHJlZU5vZGUgbm9kZSA9IG5ldyBUcmVlTm9kZSgpOwogICAgICAgICAgICBub2RlLnZhbCA9IHZhbDsKICAgICAgICAgICAgcmV0dXJuIG5vZGU7CiAgICAgICAgfQoKICAgICAgICBpZihyb290LnZhbCA9PSB2YWwpIHsKICAgICAgICAgICAgcmV0dXJuIHJvb3Q7CiAgICAgICAgfSBlbHNlIGlmKHZhbCA8IHJvb3QudmFsKSB7CiAgICAgICAgICAgIHJvb3QubGVmdCA9IHRoaXMuaW5zZXJ0SW50b0JTVChyb290LmxlZnQsIHZhbCk7CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgcm9vdC5yaWdodCA9IHRoaXMuaW5zZXJ0SW50b0JTVChyb290LmxlZnQsIHZhbCk7CiAgICAgICAgfQogICAgICAgIHJldHVybiByb290OwogICAgfQo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIHB1YmxpYyBUcmVlTm9kZSBpbnNlcnRJbnRvQlNUKFRyZWVOb2RlIHJvb3QsIGludCB2YWwpIHsKICAgICAgICAKICAgIH0KCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIHB1YmxpYyBUcmVlTm9kZSBzZWFyY2hCU1QoVHJlZU5vZGUgcm9vdCwgaW50IHZhbCkgewoKICAgIH0KCg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgIHB1YmxpYyBUcmVlTm9kZSBzZWFyY2hCU1QoVHJlZU5vZGUgcm9vdCwgaW50IHZhbCkgewogICAgICAgIGlmKHJvb3QgPT0gbnVsbCkgewogICAgICAgICAgICByZXR1cm4gbnVsbDsKICAgICAgICB9CiAgICAgICAgaWYocm9vdC52YWwgPT0gdmFsKSB7CiAgICAgICAgICAgIHJldHVybiByb290OwogICAgICAgIH0gZWxzZSBpZih2YWwgPCByb290LnZhbCkgewogICAgICAgICAgICByZXR1cm4gc2VhcmNoQlNUKHJvb3QubGVmdCwgdmFsKTsKICAgICAgICB9IGVsc2UgewogICAgICAgICAgICByZXR1cm4gc2VhcmNoQlNUKHJvb3QucmlnaHQsIHZhbCk7CiAgICAgICAgfQogICAgfQo=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICBJbnRlZ2VyW10gbnVtQXJyID0gezUwLDMwLDcwLG51bGwsNDAsNjAsODB9OwogICAgICAgIFRyZWVOb2RlIHJvb3QgPSBUcmVlTm9kZS5hcnIyVHJlZShBcnJheXMuYXNMaXN0KG51bUFycikpOwogICAgICAgIFRyZWVOb2RlIHJvb3QyID0gdGhpcy5kZWxldGVOb2RlKHJvb3QsIDUwKTsKCg==</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
+      </register>
+      <register name=":" type="4">
+        <text>w</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-search>stream</last-search>
+      <last-offset />
+      <last-pattern>stream</last-pattern>
+      <last-replace>~</last-replace>
+      <last-substitute encoding="base64">XDxjYXRlTmFtZUxpc3RcPg==</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>true</show-last>
+    </search>
+  </component>
+  <component name="VimSettings">
+    <state version="6" enabled="true" />
+    <notifications>
+      <idea-join enabled="true" />
+      <idea-put enabled="false" />
+    </notifications>
+  </component>
+</application>

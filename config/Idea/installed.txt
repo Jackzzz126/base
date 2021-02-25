@@ -1,0 +1,9 @@
+GrepConsole
+IdeaVIM
+Lombook Plugin
+cn.havia.ide.idea.plugin
+cn.wuzhizhan.plugin.mybatis
+com.jd.fastcode
+com.jd.p3c.smartfox
+com.jd.plugin.center
+com.jd.tools.superenter
