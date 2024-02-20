@@ -5,7 +5,7 @@
 GET _template/XXX*
 ### 删除模板
 DELETE _template/XXX
-### 创建模板
+### 创建模版1
 PUT _template/sms_update_tmp_template
 ```json
 {
@@ -42,6 +42,61 @@ PUT _template/sms_update_tmp_template
     }
 }
 ```
+### 创建模版2
+PUT _template/template_ccop_balance_log
+JSON示例
+```json
+{
+  "settings": {
+    "index": {
+      "number_of_shards": "32",
+      "number_of_replicas": "1"
+    }
+  },
+  "mappings": {
+    "properties": {
+      "orgId": {
+        "type": "long"
+      },
+      "balanceType": {
+        "type": "integer"
+      },
+      "balanceTypeName": {
+        "type": "keyword"
+      },
+      "oldBalance": {
+        "type": "long"
+      },
+      "newBalance": {
+        "type": "long"
+      },
+      "deltaBalance": {
+        "type": "long"
+      },
+      "updater": {
+        "type": "keyword"
+      },
+      "updateReason": {
+        "type": "integer"
+      },
+      "updateReasonName": {
+        "type": "keyword"
+      },
+      "updateTime": {
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd HH:mm:ss.SSS||yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+        "type": "date"
+      }
+    }
+  },
+  "aliases": {
+    "ccop_balance_log": {}
+  },
+  "index_patterns": [
+    "ccop_balance_log_*"
+  ],
+  "order": 0
+}
+```
 
 ## 索引
 ### 查询所有
@@ -63,3 +118,6 @@ POST _reindex
 }
 
 ## 搜索和聚合
+
+
+
