@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/database/redis.md",
+                "file": "读书笔记/技术/vtk-users-guide.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/database/redis.md",
+                "file": "读书笔记/技术/vtk-users-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/database/redis.md",
+                "file": "读书笔记/技术/vtk-users-guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/database/redis.md"
+                "file": "读书笔记/技术/vtk-users-guide.md"
               }
             }
           }
@@ -148,32 +148,41 @@
   },
   "active": "786d3152a1209a3c",
   "lastOpenFiles": [
-    "notes/database/mysql.md",
-    "notes/database/ES.md",
-    "notes/eggjs.md",
-    "notes/database",
-    "notes/ubuntu.md",
-    "notes/database/redis.md",
-    "notes/other.md",
-    "notes/node.md",
-    "books/HWYMYL你要如何衡量你的人生.md",
-    "books/HWPM华为的项目管理.md",
-    "books/Guns-Germs-and-Steel.md",
-    "books/Clean-Architecture.md",
-    "books/BHOCH生物和人类的简明史.md",
-    "notes/term-color.md",
-    "subjects/yaml.md",
-    "subjects/restful.md",
-    "subjects/opencv.md",
-    "subjects/OAuth2.0.md",
-    "subjects/message-queue.md",
-    "subjects/live-broadcast.md",
-    "subjects/linux_init_sys.md",
-    "subjects/jdk.md",
-    "subjects/JD-big-data.md",
-    "subjects/HDFS-HBASE.md",
-    "subjects/docker.md",
-    "subjects/复盘.md",
-    "notes/ssh.md"
+    "读书笔记/人文/TID创新者的窘境.md",
+    "读书笔记/人文/HWYMYL你要如何衡量你的人生.md",
+    "读书笔记/管理/HWPM华为的项目管理.md",
+    "读书笔记/技术/Hackers-and-Painters.md",
+    "读书笔记/人文/Guns-Germs-and-Steel.md",
+    "读书笔记/技术/DDD_领域驱动设计.md",
+    "读书笔记/技术/cpp-Primer-5th.md",
+    "读书笔记/技术/Clean-Architecture.md",
+    "读书笔记/人文/BHOCH生物和人类的简明史.md",
+    "笔记/未分类/term-color.md",
+    "读书笔记/人文",
+    "读书笔记/管理",
+    "读书笔记/技术",
+    "笔记/other.md",
+    "笔记/dev-ops/ubuntu.md",
+    "笔记/未分类/ssh.md",
+    "笔记/未分类/opencv 1.md",
+    "笔记/编程语音/javascript/node.md",
+    "笔记/未分类/gitlab.md",
+    "笔记/未分类/ffmpeg.md",
+    "笔记/编程语音/javascript/eggjs.md",
+    "笔记/未分类/open3d.md",
+    "笔记/大数据/JD-big-data.md",
+    "笔记/未分类/yaml.md",
+    "笔记/未分类/restful.md",
+    "笔记/未分类/opencv.md",
+    "笔记/未分类/OAuth2.0.md",
+    "笔记/未分类/message-queue.md",
+    "笔记/未分类/live-broadcast.md",
+    "笔记/未分类",
+    "笔记/编程语音/javascript",
+    "笔记/编程语音/java",
+    "笔记/编程语音",
+    "笔记/dev-ops",
+    "笔记/大数据",
+    "笔记/管理"
   ]
 }
