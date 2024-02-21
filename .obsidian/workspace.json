@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/ES.md",
+                "file": "notes/database/redis.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#启动",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/ES.md",
+                "file": "notes/database/redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/ES.md",
+                "file": "notes/database/redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/ES.md"
+                "file": "notes/database/redis.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -145,8 +146,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8a3fc7e8f6e7e7bf",
+  "active": "786d3152a1209a3c",
   "lastOpenFiles": [
+    "notes/database/mysql.md",
+    "notes/database/ES.md",
+    "notes/eggjs.md",
+    "notes/database",
+    "notes/ubuntu.md",
+    "notes/database/redis.md",
+    "notes/other.md",
+    "notes/node.md",
+    "books/HWYMYL你要如何衡量你的人生.md",
+    "books/HWPM华为的项目管理.md",
+    "books/Guns-Germs-and-Steel.md",
+    "books/Clean-Architecture.md",
+    "books/BHOCH生物和人类的简明史.md",
+    "notes/term-color.md",
     "subjects/yaml.md",
     "subjects/restful.md",
     "subjects/opencv.md",
@@ -159,16 +174,6 @@
     "subjects/HDFS-HBASE.md",
     "subjects/docker.md",
     "subjects/复盘.md",
-    "notes/ssh.md",
-    "notes/redis.md",
-    "notes/other.md",
-    "notes/opencv.md",
-    "notes/open3d.md",
-    "notes/node.md",
-    "notes/ES.md",
-    "notes/mysql.md",
-    "books/TID创新者的窘境.md",
-    "books/vtk-users-guide.md",
-    "books/HWYMYL你要如何衡量你的人生.md"
+    "notes/ssh.md"
   ]
 }
