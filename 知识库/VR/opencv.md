@@ -1,13 +1,13 @@
 # 简介
 
-#GUI
+# GUI
 ## read/write image
 ## deal with videos
 ## drawing fuctions
 ## mouse as paint brush
 ## trackbar
 
-#core operation
+# core operation
 ## basic
 * deal pixel
 * image properties
@@ -18,7 +18,7 @@
 * 位运算
 ##性能计量和优化
 
-#图片处理
+# 图片处理
 ##颜色空间
 ##几何变换
 ##阈值处理
@@ -43,7 +43,7 @@
 ##使用分水岭算法的图像分割
 ##使用 GrabCut 算法的交互式前景提取
 
-#特征检测和描述
+# 特征检测和描述
 ##理解特征
 ## Harris Corner Detection
 ## Shi-Tomasi Corner Detector & Good Features to Track
@@ -55,31 +55,31 @@
 ## Feature Matching: Brute-Force matcher and FLANN Matcher
 ## Feature Matching + Homography to find Objects
 
-#Video Analysis
+# Video Analysis
 ##Meanshift and Camshift
 ##Optical Flow
 ##Background Subtraction
 
-#Camera Calibration and 3D Reconstruction
+# Camera Calibration and 3D Reconstruction
 ##Camera Calibration
 ##Pose Estimation
 ##Epipolar Geometry
 ##Depth Map from Stereo Images
 
 
-#Machine Learning
+# Machine Learning
 ##K-Nearest Neighbour
 ##Support Vector Machines (SVM)
 ##K-Means Clustering)
 
-#Computational Photography
+# Computational Photography
 ##Image Denoising
 ##Image Inpainting
 ##High Dynamic Range (HDR)
 
-#Object Detection
+# Object Detection
 ##Face detection using haar-cascades
 
-#OpenCV-Python Bindings
+# OpenCV-Python Bindings
 ##How OpenCV-Python Bindings Works?
 

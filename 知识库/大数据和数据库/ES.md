@@ -2,12 +2,16 @@
 
 ## 模板
 ### 查询所有模板
+```
 GET _template/XXX*
+```
 ### 删除模板
+```
 DELETE _template/XXX
+```
 ### 创建模版1
-PUT _template/sms_update_tmp_template
 ```json
+PUT _template/sms_update_tmp_template
 {
     "index_patterns":[
         "XXX*"
@@ -120,4 +124,63 @@ POST _reindex
 ## 搜索和聚合
 
 
-
+# ES常见操作记录(基于6.x版本)
+## 索引
+### 创建索引
+``` json
+put index_name
+{
+    "settings": {
+        "index": {
+            "number_of_shards": "4",
+            "number_of_replicas": "1"
+        }
+    },
+    "mappings": {
+        "monitor_app_host": {//type name
+            "_all": {
+                "enabled": false
+            },
+            "properties": {
+                "podIp": {
+                    "type": "keyword"
+                },
+                "hostGroupType": {
+                    "type": "keyword"
+                },
+                "hostIp": {
+                    "type": "keyword"
+                },
+                "appName": {
+                    "type": "keyword"
+                },
+                "hostRoom": {
+                    "type": "keyword"
+                },
+                "hostType": {
+                    "type": "keyword"
+                },
+                "hostMemoryConf": {
+                    "type": "keyword"
+                },
+                "id": {
+                    "type": "keyword"
+                },
+                "hostCpuConf": {
+                    "type": "keyword"
+                },
+                "hostDiskConf": {
+                    "type": "keyword"
+                },
+                "hostGroupName": {
+                    "type": "keyword"
+                },
+                "hostGroupId": {
+                    "type": "keyword"
+                }
+            }
+        }
+    },
+    "aliases": {}
+}
+```

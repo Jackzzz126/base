@@ -1,9 +1,8 @@
-#Clean Architecture
+# Clean Architecture
 
 A Craftsman's Guide to Software Structure and Design
 
 # 简介
-
 * 后期，维护期，效率急剧下降
 * 开发过程中的两个值：功能，架构
 功能越来越多，架构越来越烂

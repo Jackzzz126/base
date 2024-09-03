@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "358b1fc190b92c77",
+        "id": "846a0a89eda0da81",
         "type": "tabs",
         "children": [
           {
-            "id": "8a3fc7e8f6e7e7bf",
+            "id": "36489d04d620a760",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书笔记/技术/vtk-users-guide.md",
+                "file": "京东工作/环境问题.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#启动",
-                "matchingCase": false,
+                "query": "预发",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "读书笔记/技术/vtk-users-guide.md",
+                "file": "京东工作/环境问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "读书笔记/技术/vtk-users-guide.md",
+                "file": "京东工作/环境问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +126,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书笔记/技术/vtk-users-guide.md"
+                "file": "京东工作/环境问题.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 208.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,43 +147,46 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "786d3152a1209a3c",
+  "active": "36489d04d620a760",
   "lastOpenFiles": [
-    "读书笔记/人文/TID创新者的窘境.md",
-    "读书笔记/人文/HWYMYL你要如何衡量你的人生.md",
-    "读书笔记/管理/HWPM华为的项目管理.md",
-    "读书笔记/技术/Hackers-and-Painters.md",
-    "读书笔记/人文/Guns-Germs-and-Steel.md",
+    "京东工作/沟通记录.md",
+    "京东工作/环境问题.md",
+    "京东工作/问题报备记录.md",
     "读书笔记/技术/DDD_领域驱动设计.md",
-    "读书笔记/技术/cpp-Primer-5th.md",
+    "知识库/大数据和数据库/ES.md",
+    "读书笔记/技术/vtk-users-guide.md",
+    "读书笔记/技术/Hackers-and-Painters.md",
     "读书笔记/技术/Clean-Architecture.md",
-    "读书笔记/人文/BHOCH生物和人类的简明史.md",
-    "笔记/未分类/term-color.md",
+    "读书笔记/技术/重构-改善既有代码的设计-第二版.md",
+    "读书笔记/技术/代码大全-第二版.md",
+    "知识库/软件工程/理解业务系统复杂度.md",
+    "知识库/软件工程/建持续高可用系统的破局之道.md",
+    "知识库/软件工程/复盘.md",
+    "README.md",
+    "京东工作",
+    "2024-03-15.md",
+    "未命名.canvas",
+    "未命名 1.canvas",
+    "知识库/通用知识点/写给程序员的 Unicode 入门介绍.md",
+    "Pasted image 20240229204407.png",
+    "2024-02-21.md",
+    "知识库/工具/ssh.md",
+    "知识库/工具/docker.md",
+    "知识库/大数据和数据库/elastic-search.md",
+    "知识库/通用知识点/message-queue.md",
+    "知识库/通用知识点/restful.md",
+    "知识库/通用知识点",
+    "知识库/通用知识点/OAuth2.0.md",
+    "知识库/通用知识点/yaml.md",
+    "笔记/通用知识点",
+    "知识库/VR/opencv 1.md",
+    "知识库/VR/opencv.md",
+    "知识库/3D",
+    "知识库/VR",
+    "笔记/架构设计",
+    "知识库/工具",
+    "知识库/视频直播",
     "读书笔记/人文",
-    "读书笔记/管理",
-    "读书笔记/技术",
-    "笔记/other.md",
-    "笔记/dev-ops/ubuntu.md",
-    "笔记/未分类/ssh.md",
-    "笔记/未分类/opencv 1.md",
-    "笔记/编程语音/javascript/node.md",
-    "笔记/未分类/gitlab.md",
-    "笔记/未分类/ffmpeg.md",
-    "笔记/编程语音/javascript/eggjs.md",
-    "笔记/未分类/open3d.md",
-    "笔记/大数据/JD-big-data.md",
-    "笔记/未分类/yaml.md",
-    "笔记/未分类/restful.md",
-    "笔记/未分类/opencv.md",
-    "笔记/未分类/OAuth2.0.md",
-    "笔记/未分类/message-queue.md",
-    "笔记/未分类/live-broadcast.md",
-    "笔记/未分类",
-    "笔记/编程语音/javascript",
-    "笔记/编程语音/java",
-    "笔记/编程语音",
-    "笔记/dev-ops",
-    "笔记/大数据",
-    "笔记/管理"
+    "读书笔记/管理"
   ]
 }

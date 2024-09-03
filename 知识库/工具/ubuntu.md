@@ -1,4 +1,4 @@
-#用户管理
+# 用户管理
 * 添加用户
 useradd是命令，adduser是脚本，更友好
 
@@ -13,7 +13,7 @@ vi /etc/group
 vi /etc/ssh/sshd_config
 执行"/etc/init.d/ssh restart"，重启ssh服务
 
-#SSH登陆认证慢的解决办法
+# SSH登陆认证慢的解决办法
 
 1. 关闭ssh的gssapi认证 
 vi /etc/ssh/ssh_config注释掉如下两行

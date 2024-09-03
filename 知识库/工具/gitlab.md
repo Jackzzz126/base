@@ -1,15 +1,15 @@
 # 安装
 1. 安装SSH服务，在系统防火墙中打开HTTP和SSH访问
-sudo yum install -y curl policycoreutils-python openssh-server #安装ssh
-sudo systemctl enable sshd #设为开机启动
-sudo systemctl start sshd #启动
-sudo firewall-cmd --permanent --add-service=http #打开HTTP
-sudo systemctl reload firewalld #重启，使防火墙修改生效
+sudo yum install -y curl policycoreutils-python openssh-server # 安装ssh
+sudo systemctl enable sshd # 设为开机启动
+sudo systemctl start sshd # 启动
+sudo firewall-cmd --permanent --add-service=http # 打开HTTP
+sudo systemctl reload firewalld # 重启，使防火墙修改生效
 
 2. 安装Postfix以发送通知电子邮件
-sudo yum install postfix #装Postfix以发送通知邮件
-sudo systemctl enable postfix #设为开机启动
-sudo systemctl start postfix #启动
+sudo yum install postfix # 装Postfix以发送通知邮件
+sudo systemctl enable postfix # 设为开机启动
+sudo systemctl start postfix # 启动
 3. 添加GitLab包存储库
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
 4. 安装GitLab包

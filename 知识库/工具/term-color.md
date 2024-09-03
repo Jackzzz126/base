@@ -1,7 +1,7 @@
 # 运行以下命令，若输出了完整的256种颜色，就说明当前终端支持256色
 (x=`tput op` y=`printf %76s`;for i in {0..256};do o=00$i;echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;done)
 
-#如果支持真彩色的话，输出彩虹条
+# 如果支持真彩色的话，输出彩虹条
 awk 'BEGIN{
     s="/\\/\\/\\/\\/\\"; s=s s s s s s s s;
     for (colnum = 0; colnum<77; colnum++) {
