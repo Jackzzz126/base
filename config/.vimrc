@@ -3,14 +3,14 @@ set nocp
 "-------------------------- vim-plug ------------------------------------
 call plug#begin('~/.vim/plugs')
 " auto complete
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 " tab nine
 " Plug 'zxqfl/tabnine-vim'
 " js auto complete
-Plug 'marijnh/tern_for_vim'
+" "Plug 'marijnh/tern_for_vim'
 
 " syntax check
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 
 " c++ auto tag
 "Plug 'ludovicchabant/vim-gutentags'
@@ -21,7 +21,7 @@ Plug 'w0rp/ale'
 " log file syntax highlighting
 Plug 'dzeban/vim-log-syntax'
 " js syntax highlighting
-Plug 'pangloss/vim-javascript'
+""Plug 'pangloss/vim-javascript'
 " mkd align
 Plug 'godlygeek/tabular'
 " mkd syntax highlighting
@@ -35,7 +35,7 @@ Plug 'Yggdroot/LeaderF'
 " Tagbar
 " Plugin 'majutsushi/tagbar'
 " cpp syntax highlighting
-Plug 'octol/vim-cpp-enhanced-highlight'
+""Plug 'octol/vim-cpp-enhanced-highlight'
 " color scheme
 Plug 'altercation/vim-colors-solarized'
 
@@ -223,6 +223,10 @@ let g:solarized_visibility="low"
 syntax enable
 set background=dark
 colorscheme solarized
+
+" 使用系统剪切板
+set clipboard+=unnamed
+
 
 "--------------------------eof comm-------------------------------------
 
