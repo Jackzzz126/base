@@ -1,11 +1,11 @@
 [user]
-#	name = Jackzzz126
-#	email = Jackzzz@126.com
+	name = zhengzhe17
+	email = zhengzhe17@jd.com
 [core]
 	editor = vim
 	filemode = false
 	quotepath = false
-	autocrlf = false
+	autocrlf = input
 	safecrlf = true
 	whitespace = cr-at-eol
 [color]
@@ -26,3 +26,7 @@
 [http]
 	postBuffer = 524288000
 	sslVerify = false
+[credential]
+	helper = store
+[url "git@coding.jd.com:"]
+	insteadOf = https://coding.jd.com/
